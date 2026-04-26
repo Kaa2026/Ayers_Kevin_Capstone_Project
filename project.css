@@ -50,7 +50,6 @@ h1 {
 
 nav {
 	float: left;
-	width: 90px;
 	text-align: center;
 	font-weight: bold;
 	padding-top: 5px;
@@ -150,11 +149,24 @@ img {
 	padding-right: 10px;
 }
 
+/* item Styles */
+
+#item {
+	background-color: #FAF9F7;
+	margin: 1em;
+	padding: 1em;
+	overflow: auto;
+}
+
 /* wrapper Styles */
 
 #wrapper {
 	display: grid;
-	grid-template: "header header" "nav main" "footer footer" /200px;
+	grid-template: 
+		"header header" 
+		"nav main" 
+		"footer footer" 
+		/200px 1fr;
 	background-color: #FEFAEB;
 	padding: 0;
 }
